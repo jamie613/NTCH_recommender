@@ -1,7 +1,11 @@
 import streamlit as st
 
 st.set_page_config(layout = 'wide', initial_sidebar_state="expanded")
-select_model = st.sidebar.radio('選擇頁面', ('main', 'model_02', 'model_12'))
+select_model = st.sidebar.radio('選擇頁面', ('main',
+                                         'model_02',
+                                         'model_12',
+                                         'model_15',
+                                         'model_16'))
 
 st.markdown('''
             <style>
@@ -18,6 +22,14 @@ elif select_model == 'model_12':
     html = '<iframe src="https://model-12.streamlit.app/?embed=true" class = "app"></iframe>'
     st.markdown(html, unsafe_allow_html = True)
         
+elif select_model == 'model_15':
+    html = '<iframe src="https://model-15.streamlit.app/?embed=true" class = "app"></iframe>'
+    st.markdown(html, unsafe_allow_html = True)
+
+elif select_model == 'model_16':
+    html = '<iframe src="https://model-16.streamlit.app/?embed=true" class = "app"></iframe>'
+    st.markdown(html, unsafe_allow_html = True)
+
 else:
     st.header('運用協同過濾技術於表演藝術購票推薦之研究 ─以兩廳院售票資料為例    前端展示')
     
