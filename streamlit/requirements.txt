@@ -1,0 +1,13 @@
+streamlit
+
+pandas
+numpy<=1.24
+datetime
+python-dateutil
+
+dropbox
+
+scikit-learn
+scipy
+
+tensorflow-cpu
